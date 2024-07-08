@@ -1,0 +1,113 @@
+body
+{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgb(234, 200, 78);
+}
+
+.mimo
+{
+    background-color: white;
+    margin-top: 15%;
+    font-family: cursive;
+    padding: 60px;
+    border-radius: 5%;
+    box-shadow: inset;
+    user-select: none;
+}
+
+button
+{
+    font-family: cursive;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+    background: -webkit-linear-gradient(top, #a3a3a3, green);
+    background: -moz-linear-gradient(top, #a3a3a3, green);
+    background: linear-gradient(top, #a3a3a3, green);
+
+    /*inserting box shadow*/
+    -webkit-box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+    -moz-box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 3px rgba(0,0,0,0.5);
+
+    /*inserting the user select to none*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+
+}
+
+button:hover
+{
+    background: -webkit-linear-gradient(top, #acc7a3, rgba(0, 238, 255));
+    background: -moz-linear-gradient(top, #acc7a3, rgba(0, 238, 255));
+    background: linear-gradient(top, #acc7a3, rgba(0, 238, 255));
+}
+
+button:active 
+{
+   background: -webkit-linear-gradient(top, #858565, #c5c9a9);
+   background: -moz-linear-gradient(top, #858565, #c5c9a9);
+   background: linear-gradient(top, #858565, #c5c9a9);
+
+
+}
+
+#input {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+h3
+{
+    color: red;
+}
+
+#stage
+{
+    width: 300px;
+    height: 33px;
+    position: relative;
+}
+
+#scale
+{
+    width: 250px;
+    height: 33px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+}
+
+#arrow
+{
+    width: 17px;
+    height: 22px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    -webkit-transition: left 0.5s ease-out 0s;
+    -webkit-transition: left 0.5s ease-out 0s;
+    transition: left 0.5s ease-out 0s;
+}
+
+#explosion
+{
+    display: none;
+}
+
+#falling
+{
+    display: none;
+    width: 200px;
+    height: 10px;
+    align-items: center;
+}
